@@ -1,0 +1,37 @@
+<input  type="number" 
+        id="i1" 
+        min="0"
+        max="9999999">
+<input  type="number" 
+        id="i2" 
+        min="0"
+        max="9999999">
+<button onclick="f()">add össze!</button>
+<hr>
+<div id="er"></div>
+
+<script>
+    function f() {
+        a = document.getElementById("i1").value
+        b = document.getElementById("i2").value
+        document.getElementById("er").innerHTML=
+        `Az eredmény: ${ 
+            Number(a)+Number(b)
+        }`
+    }
+</script>
+<style>
+    body {
+        background-color: rgb(185, 228, 239);
+        text-align: center;
+    }
+    input {
+        width: 100px;
+    }
+    div {
+        background-color: rgb(193, 74, 204);
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<a href="index.html">Vissza a főoldalra</a>
